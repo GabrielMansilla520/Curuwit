@@ -1,0 +1,180 @@
+/* ESTILO DE DEMOSTRACIÓN */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+  padding-top: 0; /* Elimina el relleno superior del elemento main */
+}
+
+header {
+  margin-bottom: 0;
+}
+
+#boton_form {
+  color: #fafafa;
+  background-color: #9b5de5;
+}
+#boton_form:hover {
+  color: #fafafa;
+  background-color: #7149bb;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+/* Estilo para las imágenes de perfil */
+.fotos_perfil {
+  max-width: 150px; /* Ancho máximo de la imagen */
+  max-height: 150px; /* Altura máxima de la imagen */
+  border-radius: 50%; /* Bordes redondeados para formar un círculo */
+  border: 2px solid #fff; /* Borde blanco para resaltar la imagen */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra ligera alrededor de la imagen */
+}
+
+/* Opcional: Alinear la imagen en el centro */
+.fotos_perfil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------
+    ESTILO DEL CONTENIDO
+----------------------------- */
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+  display: block; /* Agrega esta línea */
+}
+
+/* ---------------------------
+    MEDIA QUERIES
+----------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+/* Registro e inicio de sesión */
+.login-dark {
+  height: 1000px;
+  background: #475d62 url(../../assets/img/star-sky.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.login-dark form {
+  max-width: 320px;
+  width: 90%;
+  background-color: #1e2833;
+  padding: 40px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-dark .illustration {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #2980ef;
+}
+
+.login-dark form .form-control {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #434a52;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+.login-dark form .btn-primary {
+  background: #214a80;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+}
+
+.login-dark form .btn-primary:hover,
+.login-dark form .btn-primary:active {
+  background: #214a80;
+  outline: none;
+}
+
+.login-dark form .forgot {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #6f7a85;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.login-dark form .forgot:hover,
+.login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.login-dark form .btn-primary:active {
+  transform: translateY(1px);
+}
